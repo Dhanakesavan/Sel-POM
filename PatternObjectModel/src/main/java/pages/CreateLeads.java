@@ -24,7 +24,7 @@ public class CreateLeads extends ProjectMethods{
 	private WebElement eleLastName;
 	
 	@When("Enter Details as (.*),(.*),(.*)")
-	public CreateLeads enterDetails(String cName,String fName,String lName) {
+	private CreateLeads enterDetails(String cName,String fName,String lName) {
 		//WebElement eleLogin = locateElement("class","decorativeSubmit");
 		type(eleCompanyName,cName);
 		type(eleFirstName,fName);
@@ -43,7 +43,9 @@ public class CreateLeads extends ProjectMethods{
 //	private WebElement eleLastName;
 	public CreateLeads typeLastName(String data) {
 		type(eleLastName,data);
-		return this;		
+		return this;
+		
+		
 	}
 	
 
