@@ -28,7 +28,7 @@ public class TC003_CreateLead extends ProjectMethods{
 		.clickCRMSFA()
 		.clickLeads()
 		.clickCreateLeadLink()
-		.typeCompanyName(cName)
+//		.typeCompanyName(cName)
 		.typeFirstName(fname)
 		.typeLastName(lname)
 		.clickCreateLeadBtn()
