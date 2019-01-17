@@ -43,12 +43,16 @@ public class CreateLeads extends ProjectMethods{
 //	private WebElement eleLastName;
 	public CreateLeads typeLastName(String data) {
 		type(eleLastName,data);
-		return this;
-		
-		
+		return this;		
 	}
 	
-
+//	@FindBy(how=How.ID,using="createLeadForm_lastName")
+//	private WebElement eleLastName;
+	public CreateLeads typeCompanyName(String data) { //function need to be updated
+		type(eleLastName,data);
+		return this;		
+	}
+	
 	
 	@FindBy(how=How.NAME,using="submitButton")
 	private WebElement eleCreateLeadBtn;
